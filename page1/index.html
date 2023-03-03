@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <title>tema</title>
+  </head>
+  <body>
+    <nav class="header">
+      <h1>Logo</h1>
+    </nav>
+
+    <section class="matches-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="flag-cont">
+            <img
+              src="resources/Flag_of_Europe.svg.webp"
+              alt="eu-flag"
+              class="eu-flag"
+            />
+          </div>
+          <span class="uefa">Europa | UEFA Champions League 2021/2022</span>
+        </div>
+
+        <div class="matches-menu">
+          <div class="first-buttons-section">
+            <input
+              type="radio"
+              value="standings"
+              id="standings"
+              name="first-menu"
+              class="input-menu"
+            />
+            <label for="standings" class="label-menu">STANDINGS</label>
+            <input
+              type="radio"
+              value="form"
+              id="form"
+              name="first-menu"
+              class="input-menu"
+            />
+            <label for="form" class="label-menu"><strong>FORM</strong></label>
+            <input
+              type="radio"
+              value="goals stats"
+              id="goals-stats"
+              name="first-menu"
+              class="input-menu"
+            />
+            <label for="goals-stats" class="label-menu"
+              ><strong>GOALS STATS</strong></label
+            >
+            <input
+              type="radio"
+              value="cards & corners"
+              id="cards-corners"
+              name="first-menu"
+              class="input-menu"
+            />
+            <label for="cards-corners" class="label-menu"
+              ><strong>CARDS & CORNERS</strong></label
+            >
+            <input
+              type="radio"
+              value="top scores"
+              id="top-scores"
+              name="first-menu"
+              class="input-menu"
+            />
+            <label for="top-scores" class="label-menu"
+              ><strong>TOP SCORES</strong></label
+            >
+          </div>
+          <hr />
+
+          <div>
+            <input
+              type="radio"
+              value="overall"
+              id="overall"
+              name="first-submenu"
+              class="input-submenu-dim"
+            />
+            <label for="overall" class="label-submenu-dim">Overall</label>
+            <input
+              type="radio"
+              value="home"
+              id="home"
+              name="first-submenu"
+              class="input-submenu-dim"
+            />
+            <label for="home" class="label-submenu-dim">Home</label>
+            <input
+              type="radio"
+              value="away"
+              id="away"
+              name="first-submenu"
+              class="input-submenu-dim"
+            />
+            <label for="away" class="label-submenu-dim">Away</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              value="full time"
+              id="full-time"
+              name="second-submenu"
+              class="input-submenu-dim"
+            />
+            <label for="full-time" class="label-submenu-dim">Full Time</label>
+            <input
+              type="radio"
+              value="first half"
+              id="first-half"
+              name="second-submenu"
+              class="input-submenu-dim"
+            />
+            <label for="first-half" class="label-submenu-dim">First Half</label>
+            <input
+              type="radio"
+              value="second half"
+              id="second-half"
+              name="second-submenu"
+              class="input-submenu-dim"
+            />
+            <label for="second-half" class="label-submenu-dim"
+              >Second Half</label
+            >
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table class="team-table">
+            <thead class="team-table-head">
+              <tr>
+                <th>#</th>
+                <th class="team">Team</th>
+                <th>MP</th>
+                <th>G</th>
+                <th>PTS</th>
+              </tr>
+            </thead>
+            <tbody class="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

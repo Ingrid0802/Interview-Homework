@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d7d7d7;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #1c9f4b;
+  padding-bottom: 1em;
+  font-family: 'Philosopher', sans-serif;
+  margin-bottom: 2em;
+}
+
+h1 {
+  color: white;
+  font-size: 3em;
+  margin-left: 10px;
+}
+
+.title {
+  color: #1c9f4b;
+  font-size: 2em;
+  background-color: #f7f7f7;
+  padding: 0.3em 0.5em;
+  border-radius: 15px;
+}
+
+.matches-section {
+  width: 95%;
+  margin: auto;
+}
+
+.team-progresses {
+  margin: 1em 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+#myProgress {
+  width: 100%;
+}
+
+.progress-clean-sheets {
+  width: 100%;
+}
+
+.progress {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#myBar1 {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 20%;
+  height: 40px;
+  background-color: #1c9f4b;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+}
+
+#myBar2 {
+  width: 20%;
+  height: 40px;
+  background-color: #fff7cd;
+  text-align: center;
+  line-height: 40px;
+  color: #9e841b;
+}
+
+#myBar3 {
+  width: 60%;
+  height: 40px;
+  background-color: #ffe0e0;
+  text-align: center;
+  line-height: 40px;
+  color: #e1213c;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.mybar-prog {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 30px;
+  background-color: #1c9f4b;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+.mybar-prog2 {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 30%;
+  height: 30px;
+  background-color: #e1213c;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+.no-matches {
+  color: #1c9f4b;
+  padding: 0.5em 0.5em;
+}
+
+.perc {
+  color: #1c9f4b;
+}
+
+.font-dim {
+  font-weight: 600;
+  font-size: 1.3em;
+  padding: 0 0.2em;
+}
+
+.titles-team {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.teams-title-name {
+  width: 50%;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.flex-items {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.flex-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2em;
+}
+
+.flex-cont {
+  min-width: 30%;
+  background-color: #f4fcf7;
+  padding: 0.3em 0.2em;
+  border: 1px solid #1c9f4b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4em;
+}
+
+.flex-cont-2 {
+  min-width: 30%;
+  background-color: #f4fcf7;
+  padding: 0.3em 0.2em;
+  border: 1px solid #1c9f4b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.flex-cont-3 {
+  min-width: 30%;
+  padding: 0.3em 0.2em;
+  background-color: #fff7cd;
+  border: 1px solid #9e841b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  gap: 2.5em;
+}
+
+.flex-cont-3 span {
+  color: #9e841b;
+}
+
+.mid-color {
+  color: #9e841b;
+}
+
+.red-color {
+  color: #e1213c;
+}
+
+.red-bg {
+  background-color: #ffe0e0;
+  border-color: #e1213c;
+}
+
+#clean-sheets .progress {
+  width: 100%;
+  margin: auto;
+}
+
+.alignment {
+  text-align: center;
+}
+
+hr {
+  background-color: #e4e4e4;
+  border: none;
+  height: 0.3em;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+input {
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+}
+
+.input-submenu-dim {
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  margin-left: 0;
+}
+
+.label-submenu-dim {
+  padding: 0.2em 1em;
+  font-weight: 400;
+  background-color: #f4fcf7;
+  color: #1c9f4b;
+  border-radius: 10px;
+}
+
+input:checked + label {
+  background-color: #1c9f4b;
+  color: white;
+  border-radius: 15px;
+  font-weight: 400;
+}
+
+.table-container {
+  background-color: #d7d7d7;
+  border-radius: 10px;
+  padding-top: 1em;
+  margin-bottom: 2em;
+}
+
+.team-table {
+  width: 98%;
+  margin: auto;
+}
+
+tr {
+  text-align: left;
+}
+
+td {
+  background-color: white;
+  border-bottom: 3px solid #e4e4e4;
+  padding: 1em 0;
+  font-weight: 600;
+}
+
+td:first-child {
+  border-left-style: solid white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+td:last-child {
+  border-left-style: solid white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: start;
+}
+
+.team {
+  text-align: start;
+}
+
+.score {
+  text-align: start;
+}
+
+.min-dim {
+  text-align: start;
+  width: 15%;
+}
+
+.table-container {
+  margin-top: 0.3em;
+  background-color: #e4e4e4;
+}
+
+.table-body {
+  font-size: 0.9em;
+}
+
+.table-first-sect {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.eu-flag {
+  width: 2.5em;
+}
+
+.show-more-section {
+  margin-top: 0.3em;
+  text-align: center;
+  background-color: white;
+}
+
+.btn-more {
+  margin-top: 0.5em;
+  border: none;
+  background-color: transparent;
+  padding: 1em 2em;
+  font-weight: 600;
+  color: #1c9f4b;
+  font-stretch: expanded;
+  font-size: 1.1em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.manchester-logo {
+  width: 4em;
+}
+
+td .min-dim p {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 0.9em;
+  }
+  #myBar1 {
+    height: 20px;
+    line-height: 20px;
+  }
+
+  #myBar2 {
+    height: 20px;
+    line-height: 20px;
+  }
+  #myBar3 {
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .mybar-prog {
+    height: 15px;
+    line-height: 15px;
+  }
+
+  .mybar-prog2 {
+    height: 15px;
+    line-height: 15px;
+  }
+
+  .flex-cont {
+    gap: 0.5em;
+  }
+  .flex-cont3 {
+    gap: 0.5em;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    font-size: 0.5em;
+  }
+  #myBar1 {
+    height: 20px;
+    line-height: 20px;
+  }
+
+  #myBar2 {
+    height: 20px;
+    line-height: 20px;
+  }
+  #myBar3 {
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .mybar-prog {
+    height: 15px;
+    line-height: 15px;
+  }
+
+  .mybar-prog2 {
+    height: 15px;
+    line-height: 15px;
+  }
+
+  .flex-cont {
+    gap: 0.5em;
+  }
+  .flex-cont3 {
+    gap: 0.5em;
+  }
+
+  td {
+    font-size: 0.7em;
+  }
+}

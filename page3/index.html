@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="header">
+      <h1>Logo</h1>
+    </nav>
+
+    <section class="matches-section">
+      <div class="container">
+        <h1 class="title">Head 2 Head Records</h1>
+        <div class="team-progresses">
+          <div class="titles-team">
+            <img
+              src="resources/Manchester_City_FC_badge.svg.webp"
+              alt="manchester-logo"
+              class="manchester-logo"
+            />
+            <div class="teams-title-name">
+              <span><strong>Gimnasia y Esgrima La Plata</strong></span>
+            </div>
+          </div>
+          <div id="myProgress">
+            <div class="progress">
+              <div id="myBar1">20%</div>
+              <div id="myBar2">20%</div>
+              <div id="myBar3">60%</div>
+            </div>
+          </div>
+          <div class="titles-team">
+            <img
+              src="resources/Manchester_City_FC_badge.svg.webp"
+              alt="manchester-logo"
+              class="manchester-logo"
+            />
+            <div class="teams-title-name">
+              <span><strong>Manchester City</strong></span>
+            </div>
+          </div>
+        </div>
+        <section class="col-items">
+          <div class="flex-items">
+            <div class="flex-cont">
+              <div class="flex-title">
+                <span class="no-matches">5/5 Matches</span>
+                <span class="perc font-dim">100%</span>
+              </div>
+              <p class="no-matches font-dim">BTTS</p>
+            </div>
+            <div id="clean-sheets" class="flex-cont-2">
+              <div class="alignment">
+                <p class="perc font-dim">Clean Sheets</p>
+              </div>
+              <div class="progress-clean-sheets">
+                <div class="progress">
+                  <div class="mybar-prog">100%</div>
+                </div>
+              </div>
+              <div class="progress-clean-sheets">
+                <div class="progress">
+                  <div class="mybar-prog2">30%</div>
+                </div>
+              </div>
+            </div>
+            <div id="cont1" class="flex-cont">
+              <div class="flex-title">
+                <span class="no-matches">5/5 Matches</span>
+                <span class="perc font-dim">100%</span>
+              </div>
+              <p class="no-matches font-dim">Goals in both halfs</p>
+            </div>
+          </div>
+          <div class="flex-items" id="second-row">
+            <div id="cont2" class="flex-cont">
+              <div class="flex-title">
+                <span class="no-matches">5/5 Matches</span>
+                <span class="perc font-dim">100%</span>
+              </div>
+              <p class="no-matches font-dim">Over 1.5</p>
+            </div>
+            <div class="flex-cont-3 mid-bgcolor">
+              <div class="flex-title">
+                <span class="no-matches">3/5 Matches</span>
+                <span class="perc font-dim">60%</span>
+              </div>
+              <p class="no-matches font-dim mid-color">Over 2.5</p>
+            </div>
+            <div class="flex-cont red-bg">
+              <div class="flex-title">
+                <span class="no-matches red-color">1/5 Matches</span>
+                <span class="perc font-dim red-color">20%</span>
+              </div>
+              <p class="no-matches font-dim red-color">Over 3.5</p>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <div>
+          <input
+            type="radio"
+            value="all"
+            id="all"
+            name="second-submenu"
+            class="input-submenu-dim"
+          />
+          <label for="all" class="label-submenu-dim">All</label>
+          <input
+            type="radio"
+            value="gimnasia"
+            id="gimnasia"
+            name="second-submenu"
+            class="input-submenu-dim"
+          />
+          <label for="gimnasia" class="label-submenu-dim"
+            >Gimnasia y Esgrima La Plata - Home</label
+          >
+        </div>
+        <div class="table-container hidden">
+          <table class="team-table">
+            <tbody class="table-body"></tbody>
+          </table>
+          <section class="show-more-section">
+            <button class="btn-more">Show More</button>
+          </section>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
